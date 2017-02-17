@@ -1,0 +1,4 @@
+wacren_bandwith_list:
+  title: Bandwidth submissions
+  route_name: wacren_bandwith_list
+  base_route: system.admin_content

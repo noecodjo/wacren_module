@@ -1,0 +1,71 @@
+<?php
+
+/**
+* Implements hook_menu()
+*/
+function wacren_bandwith_array() {
+  return array(
+    'admin/content/wacren_bandwith' => array(
+      'title' => 'Bandwidth submissions',
+      'route_name' => 'wacren_bandwith_list',
+    ),
+    'admin/content/wacren_bandwith/add' => array(
+      'title' => 'Bandwidth Registration',
+      'route_name' => 'wacren_bandwith_add',
+    ),
+    'admin/content/wacren_bandwith/delete/%' => array(
+      'title' => 'Delete Bandwidth Registration submission',
+      'route_name' => 'wacren_bandwith_delete',
+    ),
+    'admin/content/wacren_bandwith/graph' => array(
+      'title' => 'graph',
+      'route_name' => 'wacren_bandwith_graph',
+    ),
+    'admin/content/wacren_bandwith/api' => array(
+      'title' => 'graphdata',
+      'route_name' => 'wacren_bandwith_api',
+    ),
+     'admin/content/wacren_bandwith/apic' => array(
+      'title' => 'graphdataC',
+      'route_name' => 'wacren_bandwith_apic',
+    ),
+    
+  );
+}
+
+
+
+/**
+ * Implements hook_theme().
+ */
+function wacren_bandwith_theme($existing, $type, $theme, $path) {
+  return array(
+    'index' => [
+      'variables' => []
+    ]
+  );
+}
+
+
+
+/**
+ * Implements hook_page_attachments().
+
+
+function example_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'wacren_bandwith/wacren_bandwith';
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function wacren_bandwith_permission() {
+  return array(
+    'manage bd contact forms' => array(
+      'title' => t('Manage bd contact form submissions'),
+    ),
+    'use bd contact form' => array(
+      'title' => t('Use the bd contact form'),
+    ),
+  );
+}*/

@@ -1,0 +1,12 @@
+
+wacren_bandwith.settings:
+  type: mapping
+  label: 'wacren_bandwith settings'
+  mapping:
+    case:
+      type: integer
+      label: 'Letter case of your "Bandwidth submissions" message'
+      # translatable: true
+    hello_message:
+      type: text # translatable by default.
+      label: 'Your "Hello World!" message'
