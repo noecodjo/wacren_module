@@ -1,0 +1,9 @@
+wacren_bandwith_add:
+  title: Bandwidth Registration
+  route_name: wacren_bandwith_add
+  base_route: system.user_content
+
+wacren_bandwith_graph:
+  title: Bandwidth Evaluation
+  route_name: wacren_bandwith_graph
+  base_route: system.user_content

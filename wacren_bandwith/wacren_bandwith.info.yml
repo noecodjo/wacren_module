@@ -1,0 +1,10 @@
+name: wacren_bandwith
+description: 'Ce plugin permet uniquement de gerer les soumission de bande passante...'
+type: module
+core: 8.x
+libraries: 
+- wacren_bandwith/wacren_bandwith
+
+package: wacren_custom_module
+interface translation project: wacren_bandwith    
+interface translation server pattern: modules/custom/wacren_bandwith/custom_module-%version-%language.po
