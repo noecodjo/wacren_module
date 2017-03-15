@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ChartJS</title>
+		
+		 {{ attach_library('wacren_bandwith/wacren_bandwith') }}
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			#chart-container {
+				width: 640px;
+				height: auto;
+			}
+		</style>
+	</head>
+		<body>
+		<div id="chart-container">
+			<canvas id="mycanvas"></canvas>
+		
+		<h3 id="titre"></h3>
+		    <div id="cnt2"></div>
+		</div>
+<div class="form">
+	<form>
+	
+	
+		<label>{% trans %}
+Statistiques par pays
+{% endtrans %}</label><br>
+	<select name="pays" id="pays" class="form-control" >
+		<option value="Bénin">Bénin</option><option value="Burkina Faso">Burkina Faso</option><option value="Cap-Vert">Cap-Vert</option><option value="Côte d’Ivoire">Côte d’Ivoire</option><option value="Gambie">Gambie</option><option value="Ghana">Ghana</option><option value="Guinée">Guinée</option><option value="Guinée-Bissau">Guinée-Bissau</option><option value="Liberia">Liberia</option><option value="Mali">Mali</option><option value="Mauritanie">Mauritanie</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Sénégal">Sénégal</option><option value="Sierra Leone">Sierra Leone</option><option value="Togo">Togo</option>
+	</select><br>
+		
+		<input type="button" name="evalPays" id="evalPays" class="btn btn-primary" value="Evaluer">
+	</form>
+</div>
+
+		<!-- javascript -->
+	<div class="modal hide fade" id="NoData">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <div>INFORMATION</div>
+    </div>
+    <div class="modal-body">
+     <b><center>   Le pays sélectionné ne dispose pas encore de données suffisantes pour effectuer ses Statistiques. Merci de rééssayer plus tard.</center></b>
+    </div>
+    <div class="modal-footer">
+        <a data-dismiss="modal" class="close">Fermer</a>
+    </div>
+</div>
+	</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

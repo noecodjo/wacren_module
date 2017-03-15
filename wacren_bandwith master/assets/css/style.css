@@ -1,0 +1,29 @@
+h2.bg-success{
+    padding: 15px;
+}
+
+.required-lbl{
+    color: red;
+}
+
+label[for="billinginformation"]{
+    display: inline;
+    float: left;
+    margin:0px 45px 0px 0px;
+}
+
+.card-expiry{
+    padding-left: 0px;
+}
+
+.confirm-btn{
+    float:right;
+}
+
+.bg-primary{
+    padding: 10px;
+}
+
+label{
+    margin-bottom :0px;
+}

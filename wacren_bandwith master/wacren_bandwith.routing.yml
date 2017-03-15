@@ -1,0 +1,55 @@
+wacren_bandwith_list:
+  path: '/admin/content/wacren_bandwith'
+  defaults:
+    _controller: '\Drupal\wacren_bandwith\Controller\AdminController::content'
+  requirements:
+    _permission: 'manage wacren bandwith forms'
+
+wacren_bandwith_add:
+  path: '/add'
+  defaults:
+    _form: '\Drupal\wacren_bandwith\AddForm'
+    _title: 'Bandwidth Registration'
+  requirements:
+    _permission: 'access content'
+
+
+wacren_bandwith_edit:
+  path: '/admin/content/wacren_bandwith/edit/{id}'
+  defaults:
+    _form: '\Drupal\wacren_bandwith\AddForm'
+    _title: 'Bandwidth Edition'
+  requirements:
+    _permission: 'use wacren bandwith form'
+
+wacren_bandwith_delete:
+  path: '/admin/content/wacren_bandwith/delete/{id}'
+  defaults:
+    _form: 'Drupal\wacren_bandwith\DeleteForm'
+    _title: 'Delete Bandwidth '
+  requirements:
+    _permission: 'manage wacren bandwith forms'
+
+wacren_bandwith_graph:
+  path: '/graph'
+  defaults:
+    _controller: 'Drupal\wacren_bandwith\Controller\AdminController::graphshow'
+    _title: 'Statistics'
+  requirements:
+    _permission: 'access content'
+
+wacren_bandwith_api:
+  path: '/api'
+  defaults:
+    _controller: 'Drupal\wacren_bandwith\Controller\AdminController::graphdata'
+    _title: 'Statistics'
+  requirements:
+    _permission: 'access content'
+
+wacren_bandwith_apic:
+  path: '/apic/{country}'
+  defaults:
+    _controller: 'Drupal\wacren_bandwith\Controller\AdminController::graphdataByPays'
+    _title: 'Statistics'
+  requirements:
+    _permission: 'access content'
